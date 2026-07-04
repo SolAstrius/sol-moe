@@ -1,0 +1,11 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "install": "deno install --allow-scripts --node-modules-dir=auto",
+    "dev": "sh -c 'if [ \"$1\" = \"--\" ]; then shift; fi; exec astro dev \"$@\"' sh",
+    "start": "sh -c 'if [ \"$1\" = \"--\" ]; then shift; fi; exec astro dev \"$@\"' sh",
+    "build": "astro build",
+    "preview": "sh -c 'if [ \"$1\" = \"--\" ]; then shift; fi; exec astro preview \"$@\"' sh",
+    "astro": "sh -c 'if [ \"$1\" = \"--\" ]; then shift; fi; exec astro \"$@\"' sh"
+  }
+}
